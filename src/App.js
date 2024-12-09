@@ -1,29 +1,27 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './navbar';
-import Home from './home';
-import Contact from './contact';
-import TourLocations from './tourlocations';
-import BuyTickets from './buy-tickets';
 
-function App() {
+function Home() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/tourlocations" element={<TourLocations />} />
-            <Route path="/buytickets" element={<BuyTickets />} />
-          </Routes>
-        </main>
-      </div>
-    </Router>
+    <div className="Home">
+      <header className="Home-header">
+        <h1>Welcome to Wheezer</h1>
+        <h1>Best one-man band since Michael Jackson</h1>
+        <p>
+          Carl Wheezer is a musician, blending iconic beats with electrifying performances. 
+          Experience the magic of live music, where every instrument and vocal creates a symphony of pure artistry.
+        </p>
+        <a
+          className="Home-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
-export default App;
-
+export default Home;
