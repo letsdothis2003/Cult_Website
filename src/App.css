@@ -1,0 +1,103 @@
+/* General Styles */
+.App {
+  text-align: center;
+  background-color: blue; /* Apply blue background to entire app */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navbar Styles */
+.Navbar {
+  background-color: #282c34;
+  padding: 1em;
+}
+
+.Navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.Navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Home Styles */
+.Home {
+  color: white;
+  padding: 2em;
+}
+
+/* Contact Styles */
+.Contact {
+  color: white;
+  padding: 2em;
+}
+
+/* Tour Locations Styles */
+.TourLocations {
+  color: white;
+  padding: 2em;
+}
+
+.TourLocations ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Buy Tickets Styles */
+.BuyTickets {
+  color: white;
+  padding: 2em;
+}
+
+.BuyTickets button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 1em 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.BuyTickets button:hover {
+  background-color: #21a1f1;
+}
+
